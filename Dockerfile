@@ -18,6 +18,8 @@ RUN apt-get update && \
 	apt-get install -y make &&\
 	apt-get install -y flex &&\
 	apt-get install -y expect &&\
+    apt-get update -y &&\
+    apt-get install -y vim &&\
 	cpan DBI &&\
 	cpan File::MMagic &&\
 	cpan DBD::mysql 
