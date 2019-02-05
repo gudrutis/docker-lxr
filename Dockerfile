@@ -33,9 +33,9 @@ make install
 
 WORKDIR /
 RUN apt-get install -y curl &&\
-	curl -L https://sourceforge.net/projects/lxr/files/stable/lxr-2.2.1.tgz > lxr.tgz &&\
+	curl -L https://sourceforge.net/projects/lxr/files/stable/lxr-2.3.4.tgz > lxr.tgz &&\
 	tar -xvf lxr.tgz &&\
-	mv lxr-2.2.1 lxr
+	mv lxr-2.3.4 lxr
 
 WORKDIR /lxr
 ADD custom.d /lxr/custom.d
